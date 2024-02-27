@@ -171,6 +171,7 @@ form .bouton {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -259,6 +260,10 @@ h2 {
 .populaires {
   width: 32%;
 }
+.populaires-cards {
+  display: flex;
+  flex-direction: column;
+}
 
 .populaires-title {
   display: flex;
@@ -310,6 +315,7 @@ h2 {
   justify-content: space-around;
   padding-top: 30px;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .Activities .photos2 {
@@ -419,6 +425,7 @@ h2 {
     height: 270px;
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
   }
 
   .Activities .photos2 {
@@ -496,8 +503,6 @@ h2 {
   .populaires-cards {
     display: flex;
     flex-direction: column;
-  }
-  .populaires-cards img {
   }
 
   .populaires-cards .card {
