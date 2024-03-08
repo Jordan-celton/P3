@@ -128,6 +128,7 @@ form .bouton {
   /* permet d'aligner sur la même ligne que les éléments de"filtres" */
 }
 .filtre ul {
+  padding-left: 10px;
   font-weight: bold;
   display: flex;
   flex-wrap: wrap;
@@ -138,6 +139,7 @@ form .bouton {
   border: solid 2px #f2f2f2;
   border-radius: 25px;
   height: 35px;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,9 +185,11 @@ form .bouton {
 
 /****** Hebergements ***********/
 .hebergements {
-  width: 70%;
+  width: 100%;
 }
-
+.hebergements a {
+  width: 30%;
+}
 .hebergement-title {
   display: flex;
   justify-content: space-between;
@@ -193,18 +197,16 @@ form .bouton {
 }
 
 .hebergement_cards {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  justify-content: space-around;
 }
 
 .hebergement_cards .photos {
-  height: 180px;
+  height: 190px;
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 100%;
   margin-top: 33px;
   background-color: white;
   border-radius: 20px;
@@ -508,18 +510,31 @@ h2 {
     display: flex;
     flex-wrap: wrap;
   }
+  .introduction p {
+    padding-left: 20px;
+  }
 
   .filtre ul {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    justify-content: center;
+  }
+  .filtre h3 {
+    padding-left: 20px;
+  }
+  .formulaire {
+    padding-left: 20px;
   }
   .info p {
     width: 350px;
     display: flex;
+    padding-left: 20px;
   }
   h2 {
     width: 100%;
+    display: flex;
+    padding-left: 20px;
   }
   .hebergements {
     display: flex;
@@ -533,6 +548,8 @@ h2 {
   }
   .hebergements#background {
     background-color: white;
+    display: flex;
+    align-items: center;
   }
   .hebergements-and-populaires {
     width: 100%;
@@ -548,7 +565,7 @@ h2 {
   }
   .hebergement_cards .photos {
     display: flex;
-    width: 100%;
+    width: 335px;
   }
   .populaires {
     width: 100%;
@@ -564,6 +581,7 @@ h2 {
   .populaires-cards {
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
   }
 
   .populaires-cards .card {
@@ -573,7 +591,7 @@ h2 {
   }
   .Activities-in-Marseille {
     display: flex;
-    width: 324px;
+    width: 100%;
     height: auto;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -582,22 +600,30 @@ h2 {
     display: flex;
     align-items: center;
   }
+  .Activities a {
+    display: flex;
+  }
   .Activities_cards {
     display: flex;
-    width: 324px;
+    width: 100%;
     height: auto;
     flex-direction: column;
     flex-wrap: nowrap;
   }
   .Activities .photos2 {
-    width: auto;
-    height: 200px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.1));
+    border-radius: 20px;
+    margin: 20px;
   }
   .Activities img {
-    width: 324px;
+    width: 100%;
   }
   .pied-de-page {
     display: flex;
+    padding-left: 20px;
     flex-direction: column;
   }
 }
