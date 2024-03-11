@@ -13,6 +13,8 @@
   color: var(--main-color);
 }
 body {
+  margin-right: auto;
+  margin-left: auto;
   min-width: 324px;
   max-width: 1440px;
 }
@@ -265,7 +267,7 @@ h2 {
 
 /****** Populaires ***********/
 .populaires {
-  width: 32%;
+  width: 36%;
 }
 .populaires-cards {
   display: flex;
@@ -468,9 +470,6 @@ h2 {
 
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
-  .main-container {
-    padding: 0;
-  }
   nav .logo {
     padding-top: 30px;
   }
