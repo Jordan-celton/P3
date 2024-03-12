@@ -12,6 +12,7 @@
 .fa-solid {
   color: var(--main-color);
 }
+
 body {
   margin-right: auto;
   margin-left: auto;
@@ -20,7 +21,6 @@ body {
 }
 
 .main-container {
-  width: 100%;
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
@@ -368,21 +368,21 @@ h2 {
 }
 
 .pied-de-page .a-propos {
-  width: 450px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
   margin-left: 10px;
 }
 .pied-de-page .nos-hebergements {
-  width: 450px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
   margin-left: 10px;
 }
 .pied-de-page .assistance {
-  width: 450px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
@@ -464,9 +464,12 @@ h2 {
 
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
-  .main-container {
-    margin-left: auto;
+  body {
+    position: absolute;
     margin-right: auto;
+  }
+  .main-container {
+    padding: 0;
   }
 
   nav .logo {
@@ -511,33 +514,31 @@ h2 {
   }
 
   main .introduction {
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-  }
-
-  main p {
-    display: flex;
+    align-items: center;
   }
   main .filtre {
     display: flex;
     flex-wrap: wrap;
   }
   .introduction p {
-    width: 80%;
+    width: 100%;
     padding-left: 20px;
   }
 
   .filtre ul {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    justify-content: center;
+    margin-left: 10px;
   }
   .filtre h3 {
     padding-left: 20px;
   }
   .formulaire {
+    display: flex;
+
     width: 100%;
     padding-left: 20px;
   }
@@ -549,7 +550,9 @@ h2 {
   .formulaire form {
     display: flex;
   }
-
+  .button {
+    border-radius: 15px;
+  }
   .button .button_loupe {
     display: flex;
   }
@@ -572,7 +575,7 @@ h2 {
     padding-left: 20px;
   }
   h2 {
-    display: flex;
+    width: 100%;
     padding-left: 20px;
     padding-top: 20px;
   }
@@ -601,7 +604,7 @@ h2 {
   }
   .hebergement_cards {
     display: flex;
-    width: 100%;
+    width: 315px;
     align-items: center;
     flex-direction: column;
   }
@@ -617,8 +620,9 @@ h2 {
   .populaires {
     width: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
   }
   .populaires#corner {
     border-radius: 0;
@@ -627,14 +631,14 @@ h2 {
     width: 100%;
   }
   .populaires-cards {
+    width: 335px;
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
   }
 
   .populaires-cards .card {
     display: flex;
-    width: 280%;
+    width: 335%;
     flex-direction: row;
   }
   .Activities-in-Marseille {
@@ -643,23 +647,32 @@ h2 {
     height: auto;
     flex-direction: column;
     flex-wrap: nowrap;
-  }
-  .Activities {
-    display: flex;
+    justify-content: center;
     align-items: center;
   }
+
+  .Activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
   .Activities a {
     display: flex;
     flex-direction: column;
   }
+
   .Activities_cards {
     display: flex;
-    width: 100%;
+    width: 315px;
     height: auto;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
   }
+
   .Activities .photos2 {
     width: 100%;
     height: 100%;
@@ -667,6 +680,11 @@ h2 {
     filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
   }
+  .photos2 h4 {
+    display: flex;
+    margin-left: 20px;
+  }
+
   .Activities img {
     object-fit: cover;
     height: 150px;
@@ -676,9 +694,23 @@ h2 {
     display: flex;
   }
   .pied-de-page {
-    width: 100%;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    padding: 20px; /* Ajoute un espacement autour du pied de page */
+    width: 100%;
+  }
+
+  .pied-de-page article {
+    margin: 0 20px; /* Ajoute un espacement entre les articles */
+  }
+
+  .pied-de-page ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .pied-de-page ul li {
+    margin-bottom: 5px;
   }
 }
