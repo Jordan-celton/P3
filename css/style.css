@@ -620,7 +620,8 @@ h2 {
   .hebergement_cards {
     display: flex;
     width: 315px;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
   }
   .hebergement_cards .photos {
@@ -649,6 +650,8 @@ h2 {
     width: 315px;
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .populaires-cards .card {
@@ -689,9 +692,8 @@ h2 {
     display: flex;
     width: 315px;
     height: auto;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .Activities .photos2 {
