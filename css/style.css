@@ -464,6 +464,7 @@ h2 {
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
   body {
+    width: 105%;
     position: absolute;
     margin-right: auto;
   }
