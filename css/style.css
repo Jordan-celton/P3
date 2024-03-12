@@ -418,7 +418,6 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 50px;
   }
 
   .populaires-cards {
@@ -552,6 +551,7 @@ h2 {
     margin-left: 10px;
   }
   .button {
+    width: 40px;
     border-radius: 15px;
   }
   .button .button_loupe {
