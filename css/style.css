@@ -16,7 +16,7 @@
 body {
   margin-right: auto;
   margin-left: auto;
-  min-width: 324px;
+  min-width: 320px;
   max-width: 1440px;
 }
 
@@ -159,6 +159,7 @@ form .bouton {
 .filtre ul li:hover {
   background-color: #deebff;
 }
+/* change la couleur au survol de la souris sur la partie filtre grace à :hover  */
 
 .fa-sharp {
   color: black;
@@ -464,7 +465,7 @@ h2 {
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
   body {
-    width: 105%;
+    width: 100%;
     position: absolute;
     margin-right: auto;
   }
@@ -524,8 +525,10 @@ h2 {
     flex-wrap: wrap;
   }
   .introduction p {
-    width: 95%;
-    padding-left: 20px;
+    width: 90%;
+  }
+  .filtre ul li p {
+    font-size: 12px;
   }
 
   .filtre ul {
@@ -551,6 +554,7 @@ h2 {
     display: flex;
     margin-left: 10px;
   }
+
   .button {
     width: 40px;
     border-radius: 15px;
@@ -571,15 +575,24 @@ h2 {
   form .button_search {
     display: none;
   }
+  .filtre li {
+    width: 40%;
+  }
+  .info {
+    width: 93%;
+  }
   .info p {
-    width: 350px;
+    width: 100%;
     display: flex;
     padding-left: 20px;
   }
-  h2 {
+  .populaires-title h2 {
     width: 95%;
-    padding-left: 20px;
+    padding: 0;
+  }
+  h2 {
     padding-top: 20px;
+    width: 90%;
   }
   .hebergements {
     display: flex;
@@ -613,7 +626,7 @@ h2 {
   .hebergement_cards .photos {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     height: 100%;
   }
   .populaires {
@@ -629,15 +642,18 @@ h2 {
   .populaires-title {
     width: 100%;
   }
+  .populaires-cards a {
+    width: 100%;
+  }
   .populaires-cards {
-    width: 335px;
+    width: 315px;
     display: flex;
     flex-direction: column;
   }
 
   .populaires-cards .card {
     display: flex;
-    width: 335%;
+    width: 93%;
     flex-direction: row;
   }
   .Afficher h3 {
@@ -652,13 +668,16 @@ h2 {
     justify-content: center;
     align-items: center;
   }
+  .Activities-title {
+    width: 100%;
+    margin-left: 40px;
+  }
 
   .Activities {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    text-align: center;
   }
 
   .Activities a {
@@ -676,7 +695,7 @@ h2 {
   }
 
   .Activities .photos2 {
-    width: 100%;
+    width: 93%;
     height: 100%;
     background-color: white;
     filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.1));
