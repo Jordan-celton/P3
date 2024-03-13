@@ -498,8 +498,8 @@ h2 {
 
   nav a {
     width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
   }
@@ -582,10 +582,10 @@ h2 {
     width: 40%;
   }
   .info {
-    width: 93%;
+    width: 100%;
   }
   .info p {
-    width: 100%;
+    width: 90%;
     display: flex;
     padding-left: 20px;
   }
@@ -613,6 +613,7 @@ h2 {
     align-items: center;
   }
   .hebergements-and-populaires {
+    gap: 0;
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
@@ -661,7 +662,7 @@ h2 {
 
   .populaires-cards .card {
     display: flex;
-    width: 93%;
+    width: 100%;
     flex-direction: row;
   }
   .Afficher h3 {
