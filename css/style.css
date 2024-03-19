@@ -89,6 +89,7 @@ nav div a:hover {
 }
 
 .formulaire {
+  justify-content: center;
   padding-top: 18px;
   padding-bottom: 10px;
 }
@@ -662,7 +663,7 @@ h2 {
 
   .populaires-cards .card {
     display: flex;
-    width: 100%;
+    width: 90%;
     flex-direction: row;
   }
   .Afficher h3 {
