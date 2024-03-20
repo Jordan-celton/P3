@@ -414,7 +414,7 @@ h2 {
   .hebergement_cards .photos {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .populaires {
@@ -479,12 +479,16 @@ h2 {
     padding-top: 30px;
   }
   nav div a:hover {
-    color: #0065fc;
-    border-bottom: solid 2px #0065fc;
     border-top: none;
-    padding-bottom: 20px;
-    width: 100%;
+    padding-top: 0;
     /* ... */
+  }
+  .menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  .menu a:hover {
+    border-bottom: solid 2px blue;
   }
   header {
     width: 100%;
@@ -494,7 +498,6 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom: solid 1px #f2f2f2;
   }
 
   nav a {
@@ -508,7 +511,7 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    border-bottom: solid 1px #f2f2f2;
   }
   main {
     display: flex;
@@ -627,13 +630,13 @@ h2 {
   }
   .hebergement_cards {
     display: flex;
-    width: 315px;
+    width: 100%;
     flex-direction: column;
   }
   .hebergement_cards .photos {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     height: 100%;
   }
   .populaires {
@@ -656,14 +659,14 @@ h2 {
     width: 100%;
   }
   .populaires-cards {
-    width: 315px;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
 
   .populaires-cards .card {
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-direction: row;
   }
   .Afficher h3 {
@@ -698,7 +701,7 @@ h2 {
 
   .Activities_cards {
     display: flex;
-    width: 315px;
+    width: 100%;
     height: auto;
   }
 
