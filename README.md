@@ -1,19 +1,41 @@
-Description
-Ce projet consiste à créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS. L'objectif principal est d'intégrer une interface responsive qui s'adapte aux différentes tailles d'écran (mobile, tablette et desktop).
+# 🌍 Page d'accueil d'une agence de voyage
 
-Technologies Utilisées
-HTML5 : Pour structurer le contenu de la page.
-CSS3 : Pour styliser et rendre la page visuellement attrayante.
-Figma : Pour la conception des maquettes de l'interface.
-Fonctionnalités
-Intégration de maquettes Figma fournies pour différents appareils.
-Création de composants d'interface personnalisés pour correspondre au design proposé.
-Mise en œuvre de techniques de design responsive pour assurer une expérience utilisateur optimale sur tous les appareils.
+## Description du projet
 
+Ce projet consiste à créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS . Vous travaillerez à partir de maquettes Figma pour mobile, tablette et ordinateur de bureau, et aurez pour mission principale de concevoir une interface responsive conforme aux exigences de design.
 
-Objectifs d'Apprentissage
-En travaillant sur ce projet, j'ai développé des compétences pratiques en :
+## Installation
 
-Intégration d'interfaces web.
-Design responsive.
-Structure et stylisation du code HTML et CSS.
+Clonez ce ce dépôt sur votre machine :
+
+```bash
+git clone https://github.com/Jordan-celton/P3.git
+```
+
+## 🎯 Objectifs pédagogiques
+
+Créer des interfaces web responsives adaptées à plusieurs tailles d'écran (mobile, tablette, ordinateur de bureau).
+
+Intégrer des maquettes Figma en respectant les spécifications du design.
+
+Structurer et styliser le code HTML et CSS pour reproduire fidèlement une maquette.
+
+Développer des composants d'interface personnalisés avec HTML et CSS.
+
+Comprendre les bonnes pratiques pour une architecture de code front-end claire et maintenable.
+
+## 🛠️ Technologies utilisée
+
+HTML5 CSS3
+
+## 🚀 Développement des compétences :
+
+Ce projet m'a permis de :
+
+Améliorez mes compétences en design responsive pour assurer que les interfaces s'adaptent à toutes les tailles d'écran.
+Renforcez ma capacité à interpréter des maquettes pour les traduire efficacement en code.
+Appliquer les bonnes pratiques de structuration du code HTML/CSS , en mettant en place une organisation claire et maintenable.
+
+## License
+
+Ce projet est sous licence MIT. Vous êtes libre de l'utiliser et de le modifier.
